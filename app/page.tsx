@@ -13,6 +13,7 @@ import {
   Paintbrush,
   ArrowLeftRight,
   CheckCircle2,
+  Heart
 } from "lucide-react";
 
 // Load a hand-drawn font for playful accents
@@ -521,6 +522,24 @@ export default function DoodleConverter() {
             </div>
           </div>
         </main>
+             <footer className="mt-20 border-t-2 border-dashed border-[#e8e2d9] pt-8 pb-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-[#9c8e7a] font-medium z-10 relative">
+          <p className="flex items-center gap-1.5 text-sm">
+            Crafted with <Heart size={14} className="text-[#ff6b35] fill-current animate-pulse" /> by 
+            <span className={`${caveat.className} text-[#1a1208] text-xl ml-1`}>Himanshu Joshi</span>
+          </p>
+          
+          <a 
+            href="https://x.com/joshimanshuu" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#e8e2d9] text-[#1a1208] text-sm hover:border-[#1a1208] hover:shadow-md transition-all active:scale-95 group"
+          >
+            <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-current group-hover:text-[#ff6b35] transition-colors">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            Follow for updates
+          </a>
+        </footer>
       </div>
 
       <input
